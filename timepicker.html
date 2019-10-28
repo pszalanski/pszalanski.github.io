@@ -7,12 +7,12 @@
     <title>Timepicker test</title>
 </head>
 <body>
-    <input type="time" onchange="timeChanged(e)">
+    <input type="time" onChange="timeChanged(event);">
     <p>Time changed to <span id="target"></span></p>
 
     <script>
     function timeChanged(e) {
-        document.getElementById("target").innerText = e.value;
+        document.getElementById("target").innerText = e.target.value;
     }
     </script>
 </body>
